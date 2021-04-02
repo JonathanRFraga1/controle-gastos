@@ -12,5 +12,5 @@ define('DB_USER', 'root');
 
 define('DB_PASS', '');
 
-// define('HOME_URI', 'http://localhost/controle-gastos');
-define('HOME_URI', 'http://192.168.0.32/controle-gastos');
+define('HOME_URI', 'http://localhost/controle-gastos');
+//define('HOME_URI', 'http://192.168.0.32/controle-gastos');

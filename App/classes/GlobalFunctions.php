@@ -47,8 +47,8 @@ class GlobalFunctions
      */
     public function loadModel(string $model)
     {
-        if (file_exists(ABSPATH . '/app/Models/' . $model . '.php')) {
-            require_once ABSPATH . '/app/Models/' . $model . '.php';
+        if (file_exists(ABSPATH . '/app/models/' . $model . '.php')) {
+            require_once ABSPATH . '/app/models/' . $model . '.php';
 
             $namespace = 'App\\Models\\' . $model;
 
