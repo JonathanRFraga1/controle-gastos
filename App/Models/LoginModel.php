@@ -7,7 +7,7 @@ use App\Classes\Database;
 
 class LoginModel
 {
-    private $db;
+    private object $db;
 
     public function __construct()
     {
@@ -20,7 +20,7 @@ class LoginModel
      * @param string $email
      * @return bool|array
      */
-    public function retornaUsuarioLogin(string $email)
+    public function retornaClienteLogin(string $email)
     {
         $query = $this->db->query(
             "SELECT

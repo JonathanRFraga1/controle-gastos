@@ -7,7 +7,7 @@ use App\Classes\Database;
 
 class UsuariosModel
 {
-    private $db;
+    private object $db;
 
     public function __construct()
     {

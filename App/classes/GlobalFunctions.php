@@ -19,6 +19,20 @@ class GlobalFunctions
     public $title = 'Document';
 
     /**
+     * Variavel para indexação da página
+     *
+     * @var string
+     */
+    public $robots = 'noindex,nofollow';
+
+    /**
+     * Variável de título da página
+     *
+     * @var string
+     */
+    public $title = 'Document';
+
+    /**
      * Variável com os dados para a exibição da notificação
      *
      * @var array
