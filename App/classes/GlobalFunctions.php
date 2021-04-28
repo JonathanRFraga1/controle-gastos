@@ -19,6 +19,13 @@ class GlobalFunctions
     public $title = 'Document';
 
     /**
+     * Variável com os dados para a exibição da notificação
+     *
+     * @var array
+     */
+    public $notification = array();
+
+    /**
      * Variavel para indexação da página
      *
      * @var string

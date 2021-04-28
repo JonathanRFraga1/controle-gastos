@@ -135,69 +135,6 @@ header #bt-main-menu:active {
     color: #c4c5c7;
 }
 
-nav {
-    position: absolute;
-    z-index: 98;
-    width: 45%;
-    background-color: #4a90e2;
-    color: #FFF;
-    height: 100%;
-    transition: all .5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 4rem;
-    left: -45%;
-    visibility: hidden;
-}
-
-nav ul {
-    list-style: none;
-    width: 100%;
-}
-
-nav ul li {
-    width: 100%;
-    height: 15%;
-}
-
-nav ul li a {
-    width: 95%;
-    height: 100%;
-    padding-top: 5%;
-    padding-left: 5%;
-    margin-top: 5%;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: .9rem;
-    color: #FFF;
-    text-decoration: none;
-}
-
-nav ul li a:focus,
-nav ul li a:hover {
-    width: 95%;
-    outline: none;
-    background-color: #235fa3;
-}
-
-nav ul li a:active {
-    outline: none;
-    background-color: #235fa3;
-    color: #c4c5c7;
-}
-
-nav ul li a i {
-    width: 20%;
-}
-
-nav.show {
-    left: 0;
-    visibility: initial;
-}
-
 .notification-panel {
     position: absolute;
     z-index: 99;
@@ -225,18 +162,6 @@ nav.show {
 .notification.show {
     right: 1%;
     visibility: initial;
-}
-
-header #bt-main-menu:hover,
-header #bt-main-menu:focus {
-    outline: none;
-    background-color: #235fa3;
-}
-
-header #bt-main-menu:active {
-    outline: none;
-    background-color: #235fa3;
-    color: #c4c5c7;
 }
 
 nav {
@@ -316,7 +241,7 @@ nav.show {
     transition: all .5s;
 }
 
-.notification.show{
+.notification.show {
     right: 1%;
     visibility: initial;
 }
@@ -489,6 +414,139 @@ section.panel div.table table thead tr td {
     font-weight: 600;
 }
 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+}
+
+section.panel {
+    width: 90%;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: #c4c5c7 0 0 5px 2px;
+    padding: .5rem;
+}
+
+section.panel div.title{
+    width: 50%;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.panel div.title h1{
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+section.panel div.controls-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 90%;
+}
+
+form div label {
+    font-weight: 500;
+}
+
+form div input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #aeaeaf;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+form div input:focus{
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+form div.controls {
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+form hr {
+    border-top: 1px solid #c4c5c7;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.panel div.controls-main form.busca {
+    width: 30% !important;
+    align-items: flex-end;
+}
+
+section.panel div.controls-main form.busca input {
+    border: none;
+    border-bottom: 1px solid #aeaeaf;
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+section.panel div.controls-main form.busca input:active,
+section.panel div.controls-main form.busca input:focus {
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+section.panel div.table{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+section.panel div.table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section.panel div.table table tr{
+    border-bottom: 1px solid #aeaeaf;
+}
+
+section.panel div.table table tr td {
+    text-align: center;
+    padding: .5rem;
+}
+
+section.panel div.table table thead tr td {
+    font-weight: 600;
+}
+
 @media(min-width:721px) {
     header {
         font-size: inherit;
@@ -544,6 +602,27 @@ section.panel div.table table thead tr td {
     .notification {
         width: 20%;
         right: -26%;
+    }
+
+    section.panel div.title{
+        width: 19%;
+        text-align: right;
+    }
+
+    form div {
+        flex-direction: row;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    form div label {
+        width: 20%;
+        text-align: right;
+        margin-right: 5%;
+    }
+
+    form div input {
+        width: 75%;
     }
 }
 
