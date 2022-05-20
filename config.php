@@ -1,5 +1,7 @@
 <?php
 
+const DEBUG = true;
+
 define('ABSPATH', __DIR__);
 
 define('DB_NAME', 'controle_gastos');
